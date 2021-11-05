@@ -1,0 +1,38 @@
+let mapleader=" "
+syntax on
+set number
+set relativenumber
+set cursorline
+set wrap
+set showcmd
+set ignorecase
+" 自动缩进
+set autoindent
+" Tab键的宽度
+set tabstop=4
+" 统一缩进为4
+set softtabstop=4
+set shiftwidth=4
+"编码设置
+set encoding=utf-8
+"语言设置
+set langmenu=zh_CN.UTF-8
+" 高亮显示匹配的括号
+set showmatch
+" 匹配括号高亮的时间（单位是十分之一秒）
+set matchtime=1
+" 光标移动到buffer的顶部和底部时保持3行距离
+set scrolloff=5
+set wildmenu
+set belloff=all 
+set hlsearch
+set incsearch
+noremap <LEADER><CR> :nohlsearch<CR>
+noremap J 5j
+noremap K 5k
+noremap L $
+noremap H ^
+set nocompatible
+set backspace=indent,eol,start
+call plug#begin('~/.vim/plugged')
+call plug#end()
